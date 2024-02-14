@@ -15,6 +15,8 @@ import {
   Route,
 } from "react-router-dom";
 import ProductDetails from './Components/Product/ProductDetails'
+import Signup from './Components/SignUp/Signup'
+import Welcome from './Components/Welcome/Welcome'
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
           <Route path='/product/:name' element={<ProductDetails foods={foods}/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/createplan' element={<CreatePlan/>}/>
+          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/welcome' element={<Welcome/>}/>
         </Routes>
       </BrowserRouter>
     </>
