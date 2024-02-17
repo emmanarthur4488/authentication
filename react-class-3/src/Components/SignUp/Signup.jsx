@@ -1,7 +1,7 @@
 
 import {useEffect, useRef, useState} from "react"
 import './signup.css'
-// import {ToastContainer, toast} from "react-toastify"
+
 
 const Signup = () => {
     
@@ -42,7 +42,7 @@ const Signup = () => {
     const submitHandler = (e) =>{
         e.preventDefault()
         sessionStorage.setItem('userDetails', JSON.stringify({...form}))
-        window.location="/welcome"
+        window.location="/dashboard"
     }
 
   return (

@@ -17,6 +17,9 @@ import {
 import ProductDetails from './Components/Product/ProductDetails'
 import Signup from './Components/SignUp/Signup'
 import Welcome from './Components/Welcome/Welcome'
+import Dashboard from './Components/Dashboard/Dashboard'
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
+import Customer from './Components/Pages/Customer/Customer'
 
 
 function App() {
@@ -48,9 +51,19 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/createplan' element={<CreatePlan/>}/>
           <Route path='/signup' element={<Signup/>}/>
-          <Route path='/welcome' element={<Welcome/>}/>
+
+          <Route element={<ProtectedRoute/>}>
+            <Route path='/dashboard' element={<Dashboard/>}/>
+          </Route>
+          
+          
+        </Routes>
+
+        <Routes>
+          <Route path='/customer' element={<Customer/>}/>
         </Routes>
       </BrowserRouter>
+
     </>
   )
 }
