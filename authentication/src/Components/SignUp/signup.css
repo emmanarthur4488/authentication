@@ -1,0 +1,28 @@
+.auth_signup{
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+.auth_signup form{
+    justify-content: center;
+    text-align: center;
+}
+.auth_signup form input{
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #aaaaaa;
+}
+.auth_signup button{
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 14px;
+    background: #333333;
+    color: whitesmoke;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+}

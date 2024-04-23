@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+} */
+.heading{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+}
+.heading .banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar .navv{
+    align-items: center;
+    position: relative;
+}
+.nav p{
+    color: whitesmoke;
+    padding-right: 0.75rem;
+}
+.nav h4{
+    color: whitesmoke;
+    padding-left: 0.75rem;
+}
+.navbar .navv input{
+    padding-right: 60px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    background: transparent;
+    border: 1px  solid whitesmoke;
+    border-radius: 4px;
+}
+.navbar .navv input::placeholder{
+    color: whitesmoke;
+    font-size: 12px;
+}
+.navbar .navv .icon{
+    position: relative;
+    left: -30px;
+    font-size: 6px;
+    top: 3px;
+}
+.navbar .navv .icon img{
+    font-size: 6px;
+}
+.description{
+    position: relative;
+    top: 5rem;
+    margin-left: 4rem;
+}
+.description h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+.rate{
+    display: flex;
+    padding-top: 1rem;
+}
+.rate .rate1{
+    display: flex;
+}
+.rate .rate1 p{
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left: 0.3rem;
+}
+.rate .rate2{
+    display: flex;
+    padding-left: 3rem;
+}
+.rate .rate2 p{
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left: 0.3rem;
+}
+.note{
+    padding-top: 1rem;
+}
+.note p{
+    font-size: 22px;
+    color: #ffffff;
+}
+.trailer{
+    padding-top: 2rem;
+    align-items: center;
+}
+.trailer button{
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 25px;
+    border: none;
+    background: #BE123C;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+.trailer button img{
+    width: 14%;
+    height: 14%;
+    padding-right: 4px;
+}
+.feature{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.feature p{
+    font-size: 27px;
+    font-weight: 400;   
+    color: #BE123C;
+}
+.feature .see-more{
+    align-items: center;
+}
+.feature .arrow{
+    margin-top: 5px;
+    position: relative;
+}
+
+@media screen and (max-width:760px){
+    .heading .banner{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .heading{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .navbar img{
+        width: 20%;
+        height: 20%;
+    }
+    .navbar .navv input{
+        display: none;
+    }
+    .description{
+        position: relative;
+        top: 2rem;
+        margin-left: 2rem;
+    }
+    .description h1{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .rate .rate1 p{
+        color: whitesmoke;
+        font-size: 10px;
+        padding-left: 0.3rem;
+        padding-top: 2px;
+    }
+    .rate .rate2{
+        display: flex;
+        padding-left: 2rem;
+    }
+    .rate .rate2 p{
+        color: whitesmoke;
+        font-size: 10px;
+        padding-left: 0.3rem;
+        padding-top: 2px;
+    }
+    .note{
+        padding-top: 1rem;
+    }
+    .note p{
+        font-size: 15px;
+        color: #ffffff;
+    }
+    .icon{
+        display: none;
+    }
+    .trailer button{
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border: none;
+        background: #BE123C;
+        color: whitesmoke;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: capitalize;
+        border-radius: 8px;
+    }
+    .feature{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .feature h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .feature p{
+        font-size: 18px;
+        font-weight: 400;   
+        color: #BE123C;
+    }
+    .feature .see-more{
+        align-items: center;
+    }
+    .feature .arrow{
+        position: relative;
+        width: 10%;
+    }
+}
